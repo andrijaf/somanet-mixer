@@ -1,0 +1,140 @@
+/* BODY RESET */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapper {
+	width: 100%;
+    margin-top: 10%;
+}
+
+.schleier {
+    width: 100%;
+    position: absolute;
+    height: 100%
+}
+
+.slider {
+	height: 160px;
+    overflow: -moz-scrollbars-none; 
+    position: relative;
+}
+
+.slider button {
+    position: absolute;
+    top: 0;
+    border: none;
+    width: 90px;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.prev1, .prev2, .prev3 {
+    background-image: url(images/right-arrow.png);
+    float: right;
+    right: 74px;
+}
+
+.next1, .next2, .next3 {
+    background-image: url(images/left-arrow.png); 
+    float: left;
+    left: 74px;
+}
+
+.com {
+    background-color: rgb(128, 182, 47);
+    box-shadow: inset 0 0 40px rgb(88, 142, 7);
+    height: 191px;
+    z-index: 1;
+}
+
+.core {
+    background-color: rgb(225, 35, 126);
+    box-shadow: inset 0 0 40px rgb(185, 0, 86);
+    z-index: 0;
+}
+
+.ifm {
+    background-color: rgb(38, 111, 176);
+    box-shadow: inset 0 0 40px rgb(0, 71, 136);
+    height: 251px
+}
+
+.wrapper .disabled{
+    background-color: #333;
+    box-shadow:inset 0 0 40px rgb(0,0,0);
+    
+}
+
+.disabled .viewport {
+    background-color:transparent;
+}
+
+.viewport {
+    width: 320px;
+    margin: 0 auto;
+    border-left: 4px solid rgba(0,0,0,0.3);
+    border-right: 4px solid rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.37);
+}
+
+.flipsnap1, .flipsnap2, .flipsnap3 {
+    width: 2600px; /* 320px(item width) * 3(item count) */
+}
+
+.flipsnap1:after, .flipsnap2:after,.flipsnap3:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.item {
+    height: 100%;
+    float: left;
+    width: 320px;
+    margin: 0;
+    text-align: center;
+}
+
+.item span{
+    font-size: 15px;
+    font-family: "HelveticaNeueW02-45Ligh", arial;
+    color: #FFF;
+    display: block;
+    width: 100%;
+    margin: 18px 0 4px 0;
+    perspective: -10000;
+}
+
+.item img {
+    margin-top: 7px;
+    width: 90px;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3) 
+    
+}
+
+
+
+
+/* See: http://codepen.io/anon/pen/Ifspe */
+
+/*
+.com .item:hover img {
+    -webkit-transform: rotateX(60deg) translatey(300px);
+}
+
+.core .item:hover img {
+    -webkit-transform: rotateX(60deg);
+}
+
+.ifm .item:hover img {
+    -webkit-transform: rotateX(60deg) translatey(-300px);
+}
+*/
