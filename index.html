@@ -24,24 +24,26 @@
 		var flipsnap2 = Flipsnap('.flipsnap2', options);
 		var flipsnap3 = Flipsnap('.flipsnap3', options);
 
-		var $next = $('.next1').click(function() {
+		var $next1 = $('.next1').click(function() {
 		    flipsnap1.toNext();
 		});
-		var $prev = $('.prev1').click(function() {
+		var $prev1 = $('.prev1').click(function() {
 		    flipsnap1.toPrev();
 		});
 
-		var $next = $('.next2').click(function() {
+		var $next2 = $('.next2').click(function() {
 		    flipsnap2.toNext();
+		     $(".com").addClass("disabled")
 		});
-		var $prev = $('.prev2').click(function() {
+		var $prev2 = $('.prev2').click(function() {
 		    flipsnap2.toPrev();
+			$(".com").removeClass("disabled")
 		});
 
-		var $next = $('.next3').click(function() {
+		var $next3 = $('.next3').click(function() {
 		    flipsnap3.toNext();
 		});
-		var $prev = $('.prev3').click(function() {
+		var $prev3 = $('.prev3').click(function() {
 		    flipsnap3.toPrev();
 		});
 
@@ -81,7 +83,6 @@
 		var all_data = {nr1:obj1, nr2:obj2}
 
 		flipsnap2.element.addEventListener('fstouchend', function(ev) {
-		    // if touchmove to prev, when touchmove event cancel
 
 		    //If landed on SOMANET C21 -> disable com slider
 
@@ -91,17 +92,13 @@
 		        $(".com").removeClass("disabled")
 		    }
 		});
-
+		
+		// Initial movements
 		flipsnap1.moveToPoint(3);
-
 		flipsnap2.moveToPoint(1);
-
 		flipsnap3.moveToPoint(3);
-
 		flipsnap1.moveToPoint(2);
-
 		flipsnap2.moveToPoint(0);
-
 		flipsnap3.moveToPoint(1);
 
 	});
