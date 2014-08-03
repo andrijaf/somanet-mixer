@@ -33,15 +33,15 @@ body {
 }
 
 .prev1, .prev2, .prev3 {
-    background-image: url(images/right-arrow.png);
-    float: right;
-    right: 74px;
-}
-
-.next1, .next2, .next3 {
     background-image: url(images/left-arrow.png); 
     float: left;
     left: 74px;
+}
+
+.next1, .next2, .next3 {
+    background-image: url(images/right-arrow.png);
+    float: right;
+    right: 74px;
 }
 
 .com {
