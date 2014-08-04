@@ -8,14 +8,13 @@ body {
 .wrapper {
 	width: 100%;
     overflow: hidden;
-    background-color: #bbb;
 }
 
 .slider {
 	height: 228px;
     overflow: -moz-scrollbars-none; 
     position: relative;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ccc;
 }
 
 .slider * {
@@ -106,7 +105,6 @@ body {
     display: block;
     color: #80B62F;
     font-weight: bold;
-    text-shadow: 0px 1px #111
     margin-top: 17px;
     padding: 0;
     float: left;
@@ -122,7 +120,7 @@ body {
     margin: 0 auto;
     border-left: 4px solid rgba(0,0,0,0.3);
     border-right: 4px solid rgba(0,0,0,0.3);
-    background-color: #333;
+    background-color: #fff;
 }
 
 .flipsnap_com, .flipsnap_core, .flipsnap_ifm {
@@ -142,11 +140,11 @@ body {
     width: 320px;
     margin: 0;
     text-align: center;
+    color: #222;
 }
 
 .item span{
     font-size: 15px;
-    color: #FFF;
     display: block;
     width: 100%;
     margin: 18px 0 4px 0;
@@ -158,7 +156,7 @@ body {
     width: 80px;
     transform-style: preserve-3d;
     transition: all 0.5s linear;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.3) 
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2) 
     
 }
 
@@ -168,7 +166,6 @@ body {
     transform: rotate(-90deg);
     margin: 0 -90px;
     font-weight: bold;
-    text-shadow: 0px 1px #111;
     font-size: 20px;
     text-align: center;
     width: 228px;
@@ -189,7 +186,7 @@ body {
 
 .plus {
     position: absolute;
-    color: #FFF;
+    color: #333;
     width: 100%;
     display: block;
     text-align: center;
@@ -199,8 +196,6 @@ body {
 }
 
 #result {
-    background: #333;
-    color: white;
     width: 59%;
     margin: 0 auto;
     padding: 8px 40px;
