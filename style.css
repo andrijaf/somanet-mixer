@@ -205,6 +205,7 @@ body {
     margin: 0 auto;
     padding: 8px 40px;
     position: relative;
+    height: 300px;
 }
 
 #resulting-node-foa {
