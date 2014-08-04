@@ -156,8 +156,9 @@ body {
     width: 80px;
     transform-style: preserve-3d;
     transition: all 0.5s linear;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.2) 
-    
+    /*PNG SHADOW*/
+    -webkit-filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.2));
+    filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.2));
 }
 
 .label {
